@@ -1,0 +1,16 @@
+builders:
+  http_json_parse:
+    import: "package:yyhttp/http/builder/build.dart"
+    builder_factories: ["buildJson"]
+    build_extensions: { ".dart": [".json.dart"] }
+    build_to: source
+    auto_apply: root_package
+    runs_before: ["http_http_model"]
+
+  http_http_model:
+    import: "package:yyhttp/http/builder/build.dart"
+    builder_factories: ["buildModel"]
+    build_extensions: { ".dart": [".model.dart"] }
+    build_to: source
+    auto_apply: root_package
+  
