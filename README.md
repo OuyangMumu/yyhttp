@@ -6,9 +6,7 @@
 dependencies:
   yyhttp:
     git:
-      url: https://gitlab.deepexi.top/deepexi/deepexi_devices/flu_packages.git
-      ref: dev
-      path: yyhttp
+      url: https://github.com/OuyangMumu/yyhttp.git
       
 dev_dependencies:
   build_runner: ^1.10.0
